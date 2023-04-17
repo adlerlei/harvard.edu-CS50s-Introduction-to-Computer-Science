@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const b1 = document.getElementById('b1');
+                const b2 = document.getElementById('b2');
+                const b3 = document.getElementById('b3');
+                const b4 = document.getElementById('b4');
+                const Hinttext = document.getElementById('Hinttext');
+            b1.addEventListener('click', function() {
+                b1.classList.add('red');
+                Hinttext.textContent = "Error";
+            });
+            b2.addEventListener('click', function() {
+                b2.classList.add('red');
+                Hinttext.textContent = "Error";
+            });
+            b3.addEventListener('click', function() {
+                b3.classList.add('red');
+                Hinttext.textContent = "Error";
+            });
+            b4.addEventListener('click', function() {
+                b4.classList.add('green');
+                Hinttext.textContent = "Correct answer !";
+            });
+            const freeResponse = document.getElementById('freeResponse');
+            const submitAnswer = document.getElementById('submitAnswer');
+            const Hinttext2 = document.getElementById('Hinttext2');
+
+            submitAnswer.addEventListener('click', function() {
+                const answer = freeResponse.value.toLowerCase();
+                    if (answer === "new york city") {
+                        freeResponse.style.backgroundColor = "green";
+                        Hinttext2.textContent = "Correct!";
+                    } else {
+                        freeResponse.style.backgroundColor = "red";
+                        Hinttext2.textContent = "Incorrect";
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What are the courses that are not included in CS50's Introduction to Computer Science?</h3>
+                <button id="b1">Scratch</button>
+                <button id="b2">C</button>
+                <button id="b3">Arrays</button>
+                <button id="b4">PHP</button>
+                <p id="Hinttext"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In the SQL assignment "Fiftyville" of week 7, where did the thief fly to ?</h3>
+                <h6>If the button turns green, you got it right! If it is red, you got it wrong ...</h6>
+                <input id="freeResponse" type="text">
+                <button id="submitAnswer">Click !</button>
+                <p id="Hinttext2"></p>
+            </div>
+        </div>
+    </body>
+</html>

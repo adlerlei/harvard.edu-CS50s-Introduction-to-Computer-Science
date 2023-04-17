@@ -1,0 +1,9 @@
+Initialize an integer variable called height
+Repeat the following steps until height is between 1 and 8 (inclusive):
+a. Ask the user for the height value
+For i from 0 to height - 1, perform the following steps:
+a. For j from 0 to height - i - 2, perform the following step:
+i. Print a space
+b. For k from 0 to i, perform the following step:
+i. Print a "#"
+c. Print a newline character

@@ -1,0 +1,8 @@
+sort1 uses: Bubble Sort
+How do you know? In sort1 the program compares adjacent elements and swaps them if they are not in the correct order. The program then repeats this process until no swaps are required. This is a characteristic of bubble sort.
+
+sort2 uses: Merge Sort
+How do you know? sort2 breaks the list into halves, sorts each half recursively, and then merges the sorted halves back together. This is a characteristic of merge sort.
+
+sort3 uses: Selection Sort
+How do you know? sort3 checks each item in the list against every other item to determine the smallest item in the list, then swaps it with the first item if necessary. This process is repeated with each subsequent item in the list until the entire list is sorted. This is a characteristic of selection sort.

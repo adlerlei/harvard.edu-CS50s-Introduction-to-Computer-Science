@@ -1,0 +1,7 @@
+Q : If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+A : including “happy,” “calm,” and “hopeful
+
+Q : Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+A-1. Increase the number of songs in the database, including more diverse music styles and preferences, to better represent the listener's music preferences.
+A-2. Expand the time range and collect listening data from the listener across different time periods to better represent the changing music preferences of the listener.
+A-3. Integrate song data from multiple platforms, including music platforms other than Spotify and manually imported data, to better represent the comprehensiveness of the listener's music preferences.
