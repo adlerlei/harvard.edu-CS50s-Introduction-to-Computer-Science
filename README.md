@@ -1,10 +1,9 @@
 ## This is CS50x 2023.
 ### CS50’s Introduction to Computer Science
 
-Course instructor : [David J. Malan](https://cs.harvard.edu/malan/)
+Course Instructor : [David J. Malan](https://cs.harvard.edu/malan/)
 
-Course syllabus :
-
+Course Outline :  
 Week 0 Scratch  
 Week 1 C  
 Week 2 Arrays  
